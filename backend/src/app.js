@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 // settings
 // se puede agregar el puerto de la siguiente manera
-app.set('port', process.env.PORT || 4000)
+app.set('port', process.env.PORT || 5000)
 // middlewares
 app.use(cors())
 app.use(express.json());

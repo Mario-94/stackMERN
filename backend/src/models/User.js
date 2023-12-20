@@ -9,6 +9,12 @@ const useSchema = new Schema(
             // especifica que solo puede haber un solo usuario con ese nombre
             unique: true
         },
+        email: {
+            type: String,
+            required: true,
+            trime: true,
+            unique: true
+        },
     },
     { timestamps: true }
 );
