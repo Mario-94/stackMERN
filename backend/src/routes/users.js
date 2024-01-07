@@ -5,8 +5,8 @@ router.route('/')
     .get(getUsers)
     .post(createUsers)
 // de esta manera lo que realizo es podre consultar la ruta all que me sirve para visualizar todos los usuarios esto es una prueba solo para ver como seria la ruta
-router.route('/all')
-    .get((req, res) => res.send('Users todos'))
+// router.route('/all')
+//     .get((req, res) => res.send('Users todos'))
 
 router.route('/:id')
     // .get((req, res) => res.json({ message: 'info note :id' }))
