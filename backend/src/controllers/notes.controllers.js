@@ -48,11 +48,12 @@ notesCtrl.deleteNote = async (req, res) => {
 }
 notesCtrl.updateNote = async (req, res) => {
     try {
-        const { title, content, author } = req.body
+        const { title, content, author, date } = req.body
         const updateNote = await Note.findByIdAndUpdate(req.params.id, {
             title,
             content,
-            author
+            author,
+            date
         })
         res.json({ afterData: updateNote, newData: { title, content, author }, message: 'Note update' })
     } catch (error) {
